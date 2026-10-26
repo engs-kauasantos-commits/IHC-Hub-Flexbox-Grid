@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox - Aula de CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+
+  <header>
+    <h1>Flexbox - Aula de CSS</h1>
+    <a href="index.html">Voltar ao Hub</a>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>O que é Flexbox?</h2>
+      <p>
+        Flexbox é um recurso do CSS que ajuda a organizar os elementos
+        de uma página, facilitando o alinhamento e a distribuição
+        dos espaços.
+      </p>
+      <p>Algumas propriedades importantes são:</p>
+      <ul>
+        <li><strong>display: flex</strong> - ativa o Flexbox.</li>
+        <li><strong>justify-content</strong> - alinha os elementos no eixo principal.</li>
+        <li><strong>align-items</strong> - alinha os elementos no eixo transversal.</li>
+        <li><strong>flex-direction</strong> - define a direção dos elementos.</li>
+        <li><strong>flex-wrap</strong> - permite que os elementos quebrem para outra linha.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Exemplo prático</h2>
+      <p>
+        Com display: flex, podemos colocar várias caixas lado a lado.
+      </p>
+
+      <div class="flex-container">
+        <div class="flex-box">Caixa 1</div>
+        <div class="flex-box">Caixa 2</div>
+        <div class="flex-box">Caixa 3</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Alinhamento dos elementos</h2>
+      <p>
+        A propriedade justify-content controla a distribuição
+        das caixas no eixo principal.
+      </p>
+
+      <pre><code>
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+      </code></pre>
+
+      <p>
+        O valor space-between distribui o espaço entre as caixas.
+        Já o align-items controla o alinhamento no outro eixo.
+      </p>
+    </section>
+
+    <section>
+      <h2>Direção e quebra de linha</h2>
+      <p>
+        Com flex-direction: column, os elementos ficam um abaixo
+        do outro. Com flex-wrap: wrap, eles podem passar para
+        outra linha quando não existe espaço suficiente.
+      </p>
+
+      <pre><code>
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Onde o Flexbox é utilizado?</h2>
+      <p>
+        O Flexbox pode ser usado em menus, botões, cartões,
+        cabeçalhos e outros elementos de sites que precisam
+        de alinhamento e organização.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Hub de CSS - Flexbox e Grid</p>
+  </footer>
+
+</body>
+</html>
