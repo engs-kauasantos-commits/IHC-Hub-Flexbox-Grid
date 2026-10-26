@@ -1,0 +1,23 @@
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+  background-color: #eeeeee;
+  border-radius: 8px;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 100px;
+  background-color: #3977b8;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+}
