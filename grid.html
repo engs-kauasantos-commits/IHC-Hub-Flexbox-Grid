@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid - Aula de CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+
+  <header>
+    <h1>Grid - Aula de CSS</h1>
+    <a href="index.html">Voltar ao Hub</a>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>O que é CSS Grid?</h2>
+      <p>
+        CSS Grid é um recurso do CSS que permite organizar elementos
+        em linhas e colunas, facilitando a criação de layouts.
+      </p>
+      <p>Algumas propriedades importantes são:</p>
+      <ul>
+        <li><strong>display: grid</strong> - ativa o Grid.</li>
+        <li><strong>grid-template-columns</strong> - define as colunas.</li>
+        <li><strong>grid-template-rows</strong> - define as linhas.</li>
+        <li><strong>gap</strong> - define o espaço entre os elementos.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Exemplo prático</h2>
+      <p>
+        O Grid permite distribuir caixas em diferentes linhas e colunas.
+      </p>
+
+      <div class="grid-container">
+        <div class="grid-box">Caixa 1</div>
+        <div class="grid-box">Caixa 2</div>
+        <div class="grid-box">Caixa 3</div>
+        <div class="grid-box">Caixa 4</div>
+        <div class="grid-box">Caixa 5</div>
+        <div class="grid-box">Caixa 6</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Definindo colunas e espaços</h2>
+      <p>
+        A propriedade grid-template-columns define quantas colunas
+        existem e como elas dividem o espaço disponível.
+      </p>
+
+      <pre><code>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+      </code></pre>
+
+      <p>
+        O valor repeat(3, 1fr) cria três colunas com a mesma proporção.
+        A propriedade gap define o espaço entre as caixas.
+      </p>
+    </section>
+
+    <section>
+      <h2>Onde o Grid é utilizado?</h2>
+      <p>
+        O Grid pode ser usado em galerias de imagens, páginas com cartões,
+        painéis e layouts que precisam organizar elementos em linhas e colunas.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Hub de CSS - Flexbox e Grid</p>
+  </footer>
+
+</body>
+</html>
